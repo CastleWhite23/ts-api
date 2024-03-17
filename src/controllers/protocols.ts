@@ -1,9 +1,4 @@
-import { User } from "../models/User"
-
-export interface IGetUsersController{
-    handle(): any
-}
-
-export interface IGetUsersRepository{
-    getUsers(): Promise<User[]>
+export interface HttpResponse{
+    statusCode: number,
+    body: any | string,
 }
